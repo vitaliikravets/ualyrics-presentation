@@ -133,10 +133,10 @@ function App() {
         }
       }}
       backgroundColor="black"
-      backgroundImage="url(https://i.imgflip.com/5vifke.jpg)"
-      backgroundOpacity={1}
-      backgroundSize={"90%"}
     >
+      <FlexBox alignItems="center" justifyContent="center" height="100%">
+        <Image src="https://i.imgflip.com/5vifke.jpg" height="100%"/>
+      </FlexBox>
       <Notes>
         I was to lazy to evaluate all options and went with
       </Notes>
@@ -281,8 +281,8 @@ function App() {
       </FlexBox>
     </Slide>
     <Slide>
-      <FlexBox height="100%" flexDirection="column">
-        <Image src="/friend.jpeg" size="50%" verticalAlign="center"/>
+      <FlexBox alignItems="center" justifyContent="center" height="100%">
+        <Image src="/friend.jpeg" width={500}/>
       </FlexBox>
     </Slide>
   </Deck>
