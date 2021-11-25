@@ -55,10 +55,6 @@ const template = () => (
 );
 // SPECTACLE_CLI_TEMPLATE_END
 
-const images = {
-  bg: require("./assets/friend.jpeg"),
-};
-
 function App() {
   return (
 <Deck theme={theme} template={template}>
@@ -135,7 +131,7 @@ function App() {
       backgroundColor="black"
     >
       <FlexBox alignItems="center" justifyContent="center" height="100%">
-        <Image src="https://i.imgflip.com/5vifke.jpg" height="100%"/>
+        <Image src="/5vifke.jpeg" height="100%"/>
       </FlexBox>
       <Notes>
         I was to lazy to evaluate all options and went with
@@ -157,9 +153,10 @@ function App() {
         }
       }}
       backgroundColor="black"
-      backgroundImage="url(https://i0.wp.com/www.vicoland.com/wp-content/uploads/2021/09/maxresdefault.jpg)"
-      backgroundOpacity={1}
     >
+      <FlexBox alignItems="center" justifyContent="center" height="100%">
+        <Image src="/maxresdefault.jpeg" height="100%"/>
+      </FlexBox>
       <Notes>
         AWS is quite amazing especially when it comes to serverless solutions.
       </Notes>
